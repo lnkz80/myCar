@@ -115,7 +115,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -135,7 +135,7 @@ table {
 .enemy {
   width: 76px;
   height: 149px;
-  background: transparent url("../img/myCar.png") center / cover no-repeat;
+  background: transparent url('../img/myCar.png') center / cover no-repeat;
   position: absolute;
   left: 212px;
   bottom: 10px;
@@ -155,4 +155,39 @@ table {
   height: 50px;
   background-color: #fff;
   left: 245px;
+}
+
+.start {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  z-index: 200;
+  color: #fff;
+  font-size: 1, 5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 200;
+  color: skyblue;
+  font-size: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.score > span {
+  display: block;
+  padding: 1rem 0;
 }
